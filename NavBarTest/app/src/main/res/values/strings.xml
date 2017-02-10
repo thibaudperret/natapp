@@ -25,5 +25,5 @@
     <string name="price_min">Price min.:</string>
     <string name="price_max">Price max.:</string>
     
-    <string name="location_"
+    <string name="location_pick">Pick location</string>
 </resources>
