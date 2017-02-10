@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Jobino</string>
+
+    <string name="text_search">Search</string>
+    <string name="text_add">Add service</string>
+    <string name="text_inbox">Inbox</string>
+    <string name="text_profile">Profile</string>
+
+    <string name="search_query">What are you looking for?</string>
+    <string name="search_button">Search</string>
+
+    <string name="toggle_advanced">Advanced</string>
+    <string name="toggle_simple">Simple</string>
+
+    <string name="category_prompt">Pick category: </string>
+    <string-array name="service_category">
+        <item>House</item>
+        <item>Garden</item>
+        <item>Education</item>
+        <item>Sport</item>
+    </string-array>
+
+    <string name="date_pick">Pick date</string>
+
+    <string name="price_min">Price min.:</string>
+    <string name="price_max">Price max.:</string>
+    
+    <string name="location_"
+</resources>

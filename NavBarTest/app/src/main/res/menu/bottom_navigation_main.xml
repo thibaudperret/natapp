@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_white_24px"
+        android:title="@string/text_search"/>
+    <item
+        android:id="@+id/action_add"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_white_24px"
+        android:title="@string/text_add"/>
+    <item
+        android:id="@+id/action_inbox"
+        android:enabled="true"
+        android:icon="@drawable/ic_inbox_white_24px"
+        android:title="@string/text_inbox"/>
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile_white_24px"
+        android:title="@string/text_profile"/>
+</menu>
