@@ -27,6 +27,7 @@
 
     <string name="location_pick">Pick location</string>
 
+<<<<<<< HEAD
     <string name="user_name">Valentin Rigorsson, 34</string>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nunc purus. Proin volutpat nibh at risus scelerisque, sed maximus tortor sollicitudin. Duis lacinia velit tempor nunc vestibulum, id condimentum est lobortis. Suspendisse nec efficitur orci. Sed sit amet erat sit amet massa faucibus egestas vel ultricies orci. Sed ac feugiat risus. Fusce maximus enim nec congue tincidunt. Vivamus nunc eros, porttitor nec mi a, scelerisque efficitur mi. Nulla a finibus augue. Morbi felis metus, porta in nisl eu, viverra maximus mauris. Proin eget elit dolor.
@@ -37,4 +38,17 @@ Donec sit amet metus ut sapien congue cursus eu in orci. Duis eu tempus nulla. N
 Nulla accumsan non tellus eget interdum. Fusce consequat quam sit amet orci ultrices ultrices. Maecenas euismod interdum lorem, ut interdum est ultrices nec. Fusce luctus diam lacus, vitae cursus magna gravida a. Praesent et sapien a enim viverra interdum. Nullam dictum diam in convallis tempus. Fusce et purus ante.
 Praesent mollis ante erat, nec ullamcorper nibh rhoncus vitae. Nulla convallis lectus et molestie molestie. Ut ut commodo nisl. Proin sit amet urna blandit, sollicitudin lorem vulputate, varius purus. Aliquam eu neque velit. Integer volutpat, neque a facilisis pretium, massa nunc fringilla arcu, et suscipit nibh dolor a dolor. Nam eu consectetur sem, sed suscipit tortor. Nulla tempus tincidunt turpis, in aliquet tortor rhoncus id. Cras consequat odio sapien, id posuere mauris dictum quis. Proin sed elementum diam.
 Quisque lobortis ornare tincidunt. In tellus orci, accumsan dignissim ornare at, egestas sit amet sem. In vel consectetur leo, at tincidunt odio. Quisque rhoncus nibh eros. Sed a justo at nunc ornare pulvinar. Praesent eget odio metus. Nullam iaculis, tellus a ornare ullamcorper, metus leo laoreet enim, eu posuere orci sapien eget ante. Quisque in lectus ipsum. Nullam ac sapien eget odio interdum pulvinar. Pellentesque vehicula pharetra orci eu aliquet. In ac tempus odio. Vestibulum eget enim id velit facilisis efficitur nec condimentum nisi. Quisque nec elit nec est tempor sollicitudin vitae ut neque. Vivamus quis sollicitudin velit, a commodo ex.</string>
+=======
+    <string name="job_label">Insert the job label here</string>
+    <string name="job_description">Give a description about your service</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="price_enter">Enter the price</string>
+    <string name="date_enter">Choose a date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+>>>>>>> origin/master
 </resources>
