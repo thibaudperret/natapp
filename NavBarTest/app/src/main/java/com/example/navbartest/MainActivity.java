@@ -64,13 +64,14 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new AddFragment();
                         setTitle("Add");
                         break;
-                    /*
                     case R.id.action_inbox:
-                        fragment = new DealsFragment();
+                        fragment = new InboxFragment();
+                        setTitle("Inbox");
                         break;
                     case R.id.action_profile:
                         fragment = new ProfileFragment();
-                        break;*/
+                        setTitle("Profile");
+                        break;
                 }
                 final FragmentTransaction transaction = manager.beginTransaction();
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
