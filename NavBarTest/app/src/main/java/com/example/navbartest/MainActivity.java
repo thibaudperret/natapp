@@ -73,9 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         setTitle("Profile");
                         break;
                 }
-                final FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(R.id.main_frame, fragment).commit();
+                setAndDeleteLayout(fragment);
                 return true;
             }
         });
