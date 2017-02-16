@@ -21,27 +21,18 @@ public class MainActivity extends AppCompatActivity {
     private Fragment fragment;
     private FragmentManager manager;
 
-    private Button button_search;
-    private Button button_add;
-    private Button button_inbox;
-    private Button button_profile;
-    private TextView title;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Jobino");
 
-        title = (TextView) findViewById(R.id.title);
-        button_search = (Button) findViewById(R.id.button_search);
-        button_add = (Button) findViewById(R.id.button_add);
-        button_inbox = (Button) findViewById(R.id.button_inbox);
-        button_profile = (Button) findViewById(R.id.button_profile);
-        setButtonListener();
-
         navBar = (BottomNavigationViewEx) findViewById(R.id.bottom_navigation);
         setBottomBarSettings();
+        fragment = new HomeFragment();
+        final FragmentTransaction transaction = manager.beginTransaction();
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        transaction.replace(R.id.main_frame, fragment).commit();
     }
 
     private void setBottomBarSettings() {
@@ -73,56 +64,11 @@ public class MainActivity extends AppCompatActivity {
                         setTitle("Profile");
                         break;
                 }
-                setAndDeleteLayout(fragment);
+                final FragmentTransaction transaction = manager.beginTransaction();
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.replace(R.id.main_frame, fragment).commit();
                 return true;
             }
         });
-    }
-
-    private void setButtonListener(){
-        button_search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragment = new SearchFragment();
-                setAndDeleteLayout(fragment);
-            }
-        });
-
-        button_add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragment = new AddFragment();
-                setAndDeleteLayout(fragment);
-            }
-        });
-
-        button_inbox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragment = new InboxFragment();
-                setAndDeleteLayout(fragment);
-            }
-        });
-
-        button_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fragment = new ProfileFragment();
-                setAndDeleteLayout(fragment);
-            }
-        });
-    }
-
-    private void setAndDeleteLayout(Fragment fragment){
-        final FragmentTransaction transaction = manager.beginTransaction();
-        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-        transaction.replace(R.id.main_frame, fragment).commit();
-        ViewGroup layout = (ViewGroup) button_search.getParent();
-        layout.removeView(button_search);
-        layout.removeView(button_add);
-        layout.removeView(button_inbox);
-        layout.removeView(button_profile);
-        layout = (ViewGroup) title.getParent();
-        layout.removeView(title);
     }
 }
