@@ -86,16 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 fragment = new SearchFragment();
-                final FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(R.id.main_frame, fragment).commit();
-                ViewGroup layout = (ViewGroup) button_search.getParent();
-                layout.removeView(button_search);
-                layout.removeView(button_add);
-                layout.removeView(button_inbox);
-                layout.removeView(button_profile);
-                layout = (ViewGroup) title.getParent();
-                layout.removeView(title);
+                setAndDeleteLayout(fragment);
             }
         });
 
@@ -103,16 +94,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 fragment = new AddFragment();
-                final FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(R.id.main_frame, fragment).commit();
-                ViewGroup layout = (ViewGroup) button_search.getParent();
-                layout.removeView(button_search);
-                layout.removeView(button_add);
-                layout.removeView(button_inbox);
-                layout.removeView(button_profile);
-                layout = (ViewGroup) title.getParent();
-                layout.removeView(title);
+                setAndDeleteLayout(fragment);
             }
         });
 
@@ -120,16 +102,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 fragment = new InboxFragment();
-                final FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(R.id.main_frame, fragment).commit();
-                ViewGroup layout = (ViewGroup) button_search.getParent();
-                layout.removeView(button_search);
-                layout.removeView(button_add);
-                layout.removeView(button_inbox);
-                layout.removeView(button_profile);
-                layout = (ViewGroup) title.getParent();
-                layout.removeView(title);
+                setAndDeleteLayout(fragment);
             }
         });
 
@@ -137,17 +110,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 fragment = new ProfileFragment();
-                final FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(R.id.main_frame, fragment).commit();
-                ViewGroup layout = (ViewGroup) button_search.getParent();
-                layout.removeView(button_search);
-                layout.removeView(button_add);
-                layout.removeView(button_inbox);
-                layout.removeView(button_profile);
-                layout = (ViewGroup) title.getParent();
-                layout.removeView(title);
+                setAndDeleteLayout(fragment);
             }
         });
+    }
+
+    private void setAndDeleteLayout(Fragment fragment){
+        final FragmentTransaction transaction = manager.beginTransaction();
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        transaction.replace(R.id.main_frame, fragment).commit();
+        ViewGroup layout = (ViewGroup) button_search.getParent();
+        layout.removeView(button_search);
+        layout.removeView(button_add);
+        layout.removeView(button_inbox);
+        layout.removeView(button_profile);
+        layout = (ViewGroup) title.getParent();
+        layout.removeView(title);
     }
 }
