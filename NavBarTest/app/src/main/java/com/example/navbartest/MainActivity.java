@@ -1,5 +1,6 @@
 package com.example.navbartest;
 
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -8,6 +9,11 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,11 +21,24 @@ public class MainActivity extends AppCompatActivity {
     private Fragment fragment;
     private FragmentManager manager;
 
+    private Button button_search;
+    private Button button_add;
+    private Button button_inbox;
+    private Button button_profile;
+    private TextView title;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Jobino");
+
+        title = (TextView) findViewById(R.id.title);
+        button_search = (Button) findViewById(R.id.button_search);
+        button_add = (Button) findViewById(R.id.button_add);
+        button_inbox = (Button) findViewById(R.id.button_inbox);
+        button_profile = (Button) findViewById(R.id.button_profile);
+        setButtonListener();
 
         navBar = (BottomNavigationViewEx) findViewById(R.id.bottom_navigation);
         setBottomBarSettings();
@@ -58,6 +77,76 @@ public class MainActivity extends AppCompatActivity {
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 transaction.replace(R.id.main_frame, fragment).commit();
                 return true;
+            }
+        });
+    }
+
+    private void setButtonListener(){
+        button_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragment = new SearchFragment();
+                final FragmentTransaction transaction = manager.beginTransaction();
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.replace(R.id.main_frame, fragment).commit();
+                ViewGroup layout = (ViewGroup) button_search.getParent();
+                layout.removeView(button_search);
+                layout.removeView(button_add);
+                layout.removeView(button_inbox);
+                layout.removeView(button_profile);
+                layout = (ViewGroup) title.getParent();
+                layout.removeView(title);
+            }
+        });
+
+        button_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragment = new AddFragment();
+                final FragmentTransaction transaction = manager.beginTransaction();
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.replace(R.id.main_frame, fragment).commit();
+                ViewGroup layout = (ViewGroup) button_search.getParent();
+                layout.removeView(button_search);
+                layout.removeView(button_add);
+                layout.removeView(button_inbox);
+                layout.removeView(button_profile);
+                layout = (ViewGroup) title.getParent();
+                layout.removeView(title);
+            }
+        });
+
+        button_inbox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragment = new InboxFragment();
+                final FragmentTransaction transaction = manager.beginTransaction();
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.replace(R.id.main_frame, fragment).commit();
+                ViewGroup layout = (ViewGroup) button_search.getParent();
+                layout.removeView(button_search);
+                layout.removeView(button_add);
+                layout.removeView(button_inbox);
+                layout.removeView(button_profile);
+                layout = (ViewGroup) title.getParent();
+                layout.removeView(title);
+            }
+        });
+
+        button_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragment = new ProfileFragment();
+                final FragmentTransaction transaction = manager.beginTransaction();
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.replace(R.id.main_frame, fragment).commit();
+                ViewGroup layout = (ViewGroup) button_search.getParent();
+                layout.removeView(button_search);
+                layout.removeView(button_add);
+                layout.removeView(button_inbox);
+                layout.removeView(button_profile);
+                layout = (ViewGroup) title.getParent();
+                layout.removeView(title);
             }
         });
     }

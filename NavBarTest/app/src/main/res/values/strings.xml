@@ -26,8 +26,6 @@
     <string name="price_max">1000</string>
 
     <string name="location_pick">Pick location</string>
-
-<<<<<<< HEAD
     <string name="user_name">Valentin Rigorsson, 34</string>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nunc purus. Proin volutpat nibh at risus scelerisque, sed maximus tortor sollicitudin. Duis lacinia velit tempor nunc vestibulum, id condimentum est lobortis. Suspendisse nec efficitur orci. Sed sit amet erat sit amet massa faucibus egestas vel ultricies orci. Sed ac feugiat risus. Fusce maximus enim nec congue tincidunt. Vivamus nunc eros, porttitor nec mi a, scelerisque efficitur mi. Nulla a finibus augue. Morbi felis metus, porta in nisl eu, viverra maximus mauris. Proin eget elit dolor.
@@ -46,9 +44,4 @@ Quisque lobortis ornare tincidunt. In tellus orci, accumsan dignissim ornare at,
     <string name="price_enter">Enter the price</string>
     <string name="date_enter">Choose a date</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
->>>>>>> origin/master
 </resources>
