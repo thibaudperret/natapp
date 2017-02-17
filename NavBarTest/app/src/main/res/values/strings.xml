@@ -26,7 +26,7 @@
     <string name="price_max">1000</string>
 
     <string name="location_pick">Pick location</string>
-    <string name="user_name">Valentin Rigorsson, 34</string>
+    <string name="user_name">Valentin Rigorsson, 21</string>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in nunc purus. Proin volutpat nibh at risus scelerisque, sed maximus tortor sollicitudin. Duis lacinia velit tempor nunc vestibulum, id condimentum est lobortis. Suspendisse nec efficitur orci. Sed sit amet erat sit amet massa faucibus egestas vel ultricies orci. Sed ac feugiat risus. Fusce maximus enim nec congue tincidunt. Vivamus nunc eros, porttitor nec mi a, scelerisque efficitur mi. Nulla a finibus augue. Morbi felis metus, porta in nisl eu, viverra maximus mauris. Proin eget elit dolor.
 Aliquam venenatis, nisi ut faucibus vulputate, diam sapien hendrerit lectus, non sagittis dolor ligula vel ipsum. Fusce quis gravida mi. Cras quis risus massa. Curabitur nulla justo, accumsan vel tincidunt sit amet, suscipit vel nibh. Nunc at purus eget nulla imperdiet pulvinar pretium placerat enim. Fusce porta non nibh ut bibendum. Aliquam volutpat accumsan vehicula. Etiam condimentum, quam a rhoncus faucibus, sapien nibh porttitor tortor, sit amet placerat magna nisl vitae nulla. Vivamus eget nibh est. Phasellus ante nibh, pretium non nulla pretium, condimentum elementum lacus.Praesent porta lectus non sem ornare ornare. Fusce a massa nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In at interdum eros.
@@ -36,7 +36,23 @@ Donec sit amet metus ut sapien congue cursus eu in orci. Duis eu tempus nulla. N
 Nulla accumsan non tellus eget interdum. Fusce consequat quam sit amet orci ultrices ultrices. Maecenas euismod interdum lorem, ut interdum est ultrices nec. Fusce luctus diam lacus, vitae cursus magna gravida a. Praesent et sapien a enim viverra interdum. Nullam dictum diam in convallis tempus. Fusce et purus ante.
 Praesent mollis ante erat, nec ullamcorper nibh rhoncus vitae. Nulla convallis lectus et molestie molestie. Ut ut commodo nisl. Proin sit amet urna blandit, sollicitudin lorem vulputate, varius purus. Aliquam eu neque velit. Integer volutpat, neque a facilisis pretium, massa nunc fringilla arcu, et suscipit nibh dolor a dolor. Nam eu consectetur sem, sed suscipit tortor. Nulla tempus tincidunt turpis, in aliquet tortor rhoncus id. Cras consequat odio sapien, id posuere mauris dictum quis. Proin sed elementum diam.
 Quisque lobortis ornare tincidunt. In tellus orci, accumsan dignissim ornare at, egestas sit amet sem. In vel consectetur leo, at tincidunt odio. Quisque rhoncus nibh eros. Sed a justo at nunc ornare pulvinar. Praesent eget odio metus. Nullam iaculis, tellus a ornare ullamcorper, metus leo laoreet enim, eu posuere orci sapien eget ante. Quisque in lectus ipsum. Nullam ac sapien eget odio interdum pulvinar. Pellentesque vehicula pharetra orci eu aliquet. In ac tempus odio. Vestibulum eget enim id velit facilisis efficitur nec condimentum nisi. Quisque nec elit nec est tempor sollicitudin vitae ut neque. Vivamus quis sollicitudin velit, a commodo ex.</string>
-=======
+
+    <string name="job1">Ski lessons</string>
+    <string name="job2">Android developper</string>
+    <string name="job3">Elementary math lessons</string>
+
+    <string name="description1">I am giving ski lessons during the winter. I worked with th ESF so I am a certified teacher</string>
+    <string name="description2">I learned Android when I was in school and I am able to develop a small app by myself, or I could be in a team for a bigger project</string>
+    <string name="description3">I can give math lesson that are pretty basic, but also some advanced stuff as well</string>
+
+    <string name="rating">Rating: </string>
+    <string name="see_comments">See comments on Valentin</string>
+    <string name="hide_comments">Hide comments on Valentin</string>
+
+    <string name="comment1">Valentin did a great job at giving math lesson to my daughter, 5/5</string>
+    <string name="comment2">We developped an app in Android together and we had a good time, plus he is very talented 5/5</string>
+    <string name="comment3">The ski lesson I took was maybe too short but Valentin is a great teacher, 4/5</string>
+
     <string name="job_label">Insert the job label here</string>
     <string name="job_description">Give a description about your service</string>
     <string name="description">Description</string>
