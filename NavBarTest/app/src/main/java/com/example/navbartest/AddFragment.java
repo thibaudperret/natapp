@@ -33,6 +33,9 @@ public class AddFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_add, container, false);
 
+        MainActivity m = (MainActivity) getActivity();
+        m.setTitle("Add service");
+
         datePick = (Button) view.findViewById(R.id.date_pick);
         price = (EditText) view.findViewById(R.id.price);
         job_description = (EditText) view.findViewById(R.id.job_description);

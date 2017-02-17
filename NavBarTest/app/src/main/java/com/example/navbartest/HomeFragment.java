@@ -24,6 +24,9 @@ public class HomeFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        MainActivity m = (MainActivity) getActivity();
+        m.setTitle("Jobino");
+
         title = (TextView) view.findViewById(R.id.title);
         button_search = (Button) view.findViewById(R.id.button_search);
         button_add = (Button) view.findViewById(R.id.button_add);
@@ -73,11 +76,5 @@ public class HomeFragment extends Fragment{
         final FragmentTransaction transaction = manager.beginTransaction();
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         transaction.replace(R.id.main_frame, fragment).commit();
-        ViewGroup layout = (ViewGroup) v.getParent();
-        layout.removeView(button_search);
-        layout.removeView(button_add);
-        layout.removeView(button_inbox);
-        layout.removeView(button_profile);
-        layout.removeView(title);
     }
 }

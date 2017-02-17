@@ -15,6 +15,10 @@ public class InboxFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inbox, container, false);
+
+        MainActivity m = (MainActivity) getActivity();
+        m.setTitle("Inbox");
+
         return view;
     }
 }

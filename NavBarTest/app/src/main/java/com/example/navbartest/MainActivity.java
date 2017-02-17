@@ -9,11 +9,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("Jobino");
 
         navBar = (BottomNavigationViewEx) findViewById(R.id.bottom_navigation);
         setBottomBarSettings();
@@ -49,19 +43,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (id){
                     case R.id.action_search:
                         fragment = new SearchFragment();
-                        setTitle("Search");
                         break;
                     case R.id.action_add:
                         fragment = new AddFragment();
-                        setTitle("Add");
                         break;
                     case R.id.action_inbox:
                         fragment = new InboxFragment();
-                        setTitle("Inbox");
                         break;
                     case R.id.action_profile:
                         fragment = new ProfileFragment();
-                        setTitle("Profile");
                         break;
                 }
                 final FragmentTransaction transaction = manager.beginTransaction();
