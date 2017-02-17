@@ -150,10 +150,6 @@ public class SearchFragment extends Fragment {
             tr.add(R.id.map_view, fragment).commit();
             return view;
         }
-
-        public MapFragment getFragment() {
-            return fragment;
-        }
     }
 }
 
