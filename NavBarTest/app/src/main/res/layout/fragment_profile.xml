@@ -43,20 +43,27 @@
             android:layout_gravity="center"/>
     </LinearLayout>
 
-    <ScrollView
+
+
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="3"
+        android:scrollbars="vertical">
 
-        <LinearLayout
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="200dp">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/wfwef"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="@string/lorem"/>
-        </LinearLayout>
-    </ScrollView>
+        </android.support.v7.widget.CardView>
+    </GridLayout>
 
 </LinearLayout>
