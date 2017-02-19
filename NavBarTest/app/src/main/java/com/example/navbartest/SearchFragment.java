@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,8 @@ public class SearchFragment extends Fragment {
     private TextView priceMin, priceMax;
 
     private Button locationPick;
+
+    private static EditText date;
 
     public SearchFragment() {
 
@@ -58,6 +61,8 @@ public class SearchFragment extends Fragment {
         priceMax = (TextView) view.findViewById(R.id.price_max);
 
         locationPick = (Button) view.findViewById(R.id.location_pick);
+
+        date = (EditText) view.findViewById(R.id.date);
 
         setSearchModeListener();
         setDatePick();
@@ -103,8 +108,7 @@ public class SearchFragment extends Fragment {
         }
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
-            Toast t = Toast.makeText(getContext(), day + "/" + (month + 1) + "/" + year, Toast.LENGTH_SHORT);
-            t.show();
+            date.setText((day + "/" + (month + 1) + "/" + year).toString());
         }
     }
 

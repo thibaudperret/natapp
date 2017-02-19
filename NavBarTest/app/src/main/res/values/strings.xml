@@ -22,6 +22,7 @@
 
     <string name="date_pick">Pick date</string>
 
+    <string name="price_range">Price range:</string>
     <string name="price_min">0</string>
     <string name="price_max">1000</string>
 
